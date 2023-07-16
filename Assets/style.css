@@ -1,0 +1,53 @@
+nav {
+    background-image: linear-gradient(to right, #99badd, navy);
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}   
+.col-3 {
+    margin: .5rem;
+
+}
+.search-area {
+    margin: .5rem;
+}
+.search-bar {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: 1px solid grey;
+    width: 100%;
+}
+
+.btn-group-vertical {
+    margin: .5rem;
+}
+
+.btn-secondary {
+    margin-bottom: 1rem;
+}
+#current-card {
+    border: black 1px solid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#currentCity {
+    display: inline;
+}
+#currentDate {
+    display: inline;
+}
+#currentIcon {
+    display: inline;
+
+}
+
+#currentTemp {
+    padding-top: 1rem;
+}
+.five-day {
+    background-color: navy;
+    color: white;
+}

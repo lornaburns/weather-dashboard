@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+   
+    
+  </head>
+
+  <body>
+    <header>
+      <nav>Weather Dashboard</nav>
+    </header>
+    
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+      <div class="search-area d-grid gap-2 d-md-block">
+      <h3>Search for a City:</h3>
+      <input type="text" class="search-bar inputValue" placeholder="San Diego">
+      <button class="btn btn-primary btn-block searchButton">Search</button>
+    </div>
+    
+      <hr class="solid">
+  
+      <div class="btn-group-vertical d-grid gap-2 d-md-block" id="recentSearchContainer"></div>
+    
+    
+    </div>
+
+
+
+    <div class="col-8">
+      <div class="card border-0">
+        <div class="card-body" id="current-card">
+          <h3 id="currentCity"></h3>
+          <h3 id="currentDate"></h3>
+          <img id="currentIcon" src="" alt="Weather icon">
+          <h5 id="currentTemp"></h5>
+          <h5 id="currentWind"></h5>
+          <h5 id="currentHumidity"></h5>
+        </div>
+      </div>
+
+      <h3>5-Day Forecast:</h3>
+      <div class="card-deck">
+        <div class="card five-day" id="dayOne">
+          <div class="card-body">
+            <h5 class="card-title" id="dayOneDate"></h5>
+            <div><img id="dayOneIcon" src="" alt="Weather icon"></div>
+            <p id="dayOneTemp"></p>
+            <p id="dayOneWind"></p>
+            <p id="dayOneHumidity"></p>
+          </div>
+        </div>
+        <div class="card five-day" id="dayTwo">
+          <div class="card-body">
+            <h5 class="card-title" id="dayTwoDate"></h5>
+            <div><img id="dayTwoIcon" src="" alt="Weather icon"></div>
+            <p id="dayTwoTemp"></p>
+            <p id="dayTwoWind"></p>
+            <p id="dayTwoHumidity"></p>
+          </div>
+        </div>
+        <div class="card five-day" id="dayThree">
+          <div class="card-body">
+            <h5 class="card-title" id="dayThreeDate"></h5>
+            <div><img id="dayThreeIcon" src="" alt="Weather icon"></div>
+            <p id="dayThreeTemp"></p>
+            <p id="dayThreeWind"></p>
+            <p id="dayThreeHumidity"></p>
+          </div>
+        </div>
+        <div class="card five-day" id="dayFour">
+          <div class="card-body">
+            <h5 class="card-title" id="dayFourDate"></h5>
+            <div><img id="dayFourIcon" src="" alt="Weather icon"></div>
+            <p id="dayFourTemp"></p>
+            <p id="dayFourWind"></p>
+            <p id="dayFourHumidity"></p>
+          </div>
+        </div>
+        <div class="card five-day" id="dayFive">
+          <div class="card-body">
+            <h5 class="card-title" id="dayFiveDate"></h5>
+            <div><img id="dayFiveIcon" src="" alt="Weather icon"></div>
+            <p id="dayFiveTemp"></p>
+            <p id="dayFiveWind"></p>
+            <p id="dayFiveHumidity"></p>
+          </div>
+        
+        </div>
+      </div>
+      
+    </div>
+  
+
+
+
+  </div>
+</div>
+    
+    <script src="assets/script.js"></script>
+  </body>
+
+</html>
