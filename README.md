@@ -15,7 +15,7 @@ Upload index.html and assets folder (contains script and stylesheet) to browser.
 ## Links:
 
 - [Webpage]()
-- [Repository]()
+- [Repository](https://github.com/lornaburns/weather-dashboard)
 
 ## Use:
 
@@ -23,7 +23,7 @@ This webpage is designed for desktop screens; it is not responsive on smaller sc
 
 ## Image:
 
-<img src="" alt="weather dashboard" width="200"/>
+<img src="https://github.com/lornaburns/weather-dashboard/blob/main/Assets/weather-dashboard.png?raw=true" alt="weather dashboard" width="200"/>
 
 ## Credits:
 - https://www.youtube.com/watch?v=GXrDEA3SIOQ
