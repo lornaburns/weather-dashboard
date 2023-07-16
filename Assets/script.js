@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
     event.preventDefault();
     var searchQuery = inputValue.value;
     handleSearch(searchQuery);
+   
   })
   // attaches click listener to search button
   recentSearchContainer.addEventListener("click", handleRecentSearch);
@@ -98,6 +99,20 @@ document.addEventListener("DOMContentLoaded", function() {
       .then(response => response.json())
       .then(data => {
         console.log(data);
+        
+        //displays icons when search is performed
+        var currentDayIcon = document.querySelector("#currentIcon");
+        var dayOneIcon = document.querySelector("#dayOneIcon");
+        var dayTwoIcon = document.querySelector("#dayTwoIcon");
+        var dayThreeIcon = document.querySelector("#dayThreeIcon");
+        var dayFourIcon = document.querySelector("#dayFourIcon");
+        var dayFiveIcon = document.querySelector("#dayFiveIcon");
+        currentDayIcon.classList.remove("hidden");
+        dayOneIcon.classList.remove("hidden");
+        dayTwoIcon.classList.remove("hidden");
+        dayThreeIcon.classList.remove("hidden");
+        dayFourIcon.classList.remove("hidden");
+        dayFiveIcon.classList.remove("hidden");
 
         //populates current data
         var nameValue = data.city.name;
@@ -105,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var windValue = data.list[0].wind.speed;
         var humidityValue = data.list[0].main.humidity;
         var iconValue = data.list[0].weather[0].icon;
-        var iconurl = "http://openweathermap.org/img/w/" + iconValue + ".png";
+        var iconurl = "https://openweathermap.org/img/w/" + iconValue + ".png";
         var currentDate = dayjs().format("M/D/YYYY");
 
         currentCity.innerHTML = nameValue;
@@ -120,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var dayOneWindValue = data.list[1].wind.speed;
         var dayOneHumidityValue = data.list[1].main.humidity;
         var dayOneIconValue = data.list[1].weather[0].icon;
-        var dayOneIconURL = "http://openweathermap.org/img/w/" + dayOneIconValue + ".png";
+        var dayOneIconURL = "https://openweathermap.org/img/w/" + dayOneIconValue + ".png";
         var dayOneDateValue = dayjs().add(1, "day").format("M/D/YYYY");
 
         dayOneTemp.innerHTML = "Temp: " + dayOneTempValue + " F";
@@ -134,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var dayTwoWindValue = data.list[2].wind.speed;
         var dayTwoHumidityValue = data.list[2].main.humidity;
         var dayTwoIconValue = data.list[2].weather[0].icon;
-        var dayTwoIconURL = "http://openweathermap.org/img/w/" + dayTwoIconValue + ".png";
+        var dayTwoIconURL = "https://openweathermap.org/img/w/" + dayTwoIconValue + ".png";
         var dayTwoDateValue = dayjs().add(2, "day").format("M/D/YYYY");
 
         dayTwoTemp.innerHTML = "Temp: " + dayTwoTempValue + " F";
@@ -148,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var dayThreeWindValue = data.list[3].wind.speed;
         var dayThreeHumidityValue = data.list[3].main.humidity;
         var dayThreeIconValue = data.list[3].weather[0].icon;
-        var dayThreeIconURL = "http://openweathermap.org/img/w/" + dayThreeIconValue + ".png";
+        var dayThreeIconURL = "https://openweathermap.org/img/w/" + dayThreeIconValue + ".png";
         var dayThreeDateValue = dayjs().add(3, "day").format("M/D/YYYY");
 
         dayThreeTemp.innerHTML = "Temp: " + dayThreeTempValue + " F";
@@ -162,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var dayFourWindValue = data.list[4].wind.speed;
         var dayFourHumidityValue = data.list[4].main.humidity;
         var dayFourIconValue = data.list[4].weather[0].icon;
-        var dayFourIconURL = "http://openweathermap.org/img/w/" + dayFourIconValue + ".png";
+        var dayFourIconURL = "https://openweathermap.org/img/w/" + dayFourIconValue + ".png";
         var dayFourDateValue = dayjs().add(4, "day").format("M/D/YYYY");
 
         dayFourTemp.innerHTML = "Temp: " + dayFourTempValue + " F";
@@ -176,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var dayFiveWindValue = data.list[5].wind.speed;
         var dayFiveHumidityValue = data.list[5].main.humidity;
         var dayFiveIconValue = data.list[5].weather[0].icon;
-        var dayFiveIconURL = "http://openweathermap.org/img/w/" + dayFiveIconValue + ".png";
+        var dayFiveIconURL = "https://openweathermap.org/img/w/" + dayFiveIconValue + ".png";
         var dayFiveDateValue = dayjs().add(5, "day").format("M/D/YYYY");
 
         dayFiveTemp.innerHTML = "Temp: " + dayFiveTempValue + " F";
