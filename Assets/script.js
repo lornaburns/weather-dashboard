@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var dayOneIconURL = "http://openweathermap.org/img/w/" + dayOneIconValue + ".png";
         var dayOneDateValue = dayjs().add(1, "day").format("M/D/YYYY");
 
-        dayOneTemp.innerHTML = "Temperature: " + dayOneTempValue + " F";
+        dayOneTemp.innerHTML = "Temp: " + dayOneTempValue + " F";
         dayOneWind.innerHTML = "Wind: " + dayOneWindValue + " mph";
         dayOneHumidity.innerHTML = "Humidity: " + dayOneHumidityValue + " %";
         dayOneIcon.setAttribute("src", dayOneIconURL);
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var dayTwoIconURL = "http://openweathermap.org/img/w/" + dayTwoIconValue + ".png";
         var dayTwoDateValue = dayjs().add(2, "day").format("M/D/YYYY");
 
-        dayTwoTemp.innerHTML = "Temperature: " + dayTwoTempValue + " F";
+        dayTwoTemp.innerHTML = "Temp: " + dayTwoTempValue + " F";
         dayTwoWind.innerHTML = "Wind: " + dayTwoWindValue + " mph";
         dayTwoHumidity.innerHTML = "Humidity: " + dayTwoHumidityValue + " %";
         dayTwoIcon.setAttribute("src", dayTwoIconURL);
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var dayThreeIconURL = "http://openweathermap.org/img/w/" + dayThreeIconValue + ".png";
         var dayThreeDateValue = dayjs().add(3, "day").format("M/D/YYYY");
 
-        dayThreeTemp.innerHTML = "Temperature: " + dayThreeTempValue + " F";
+        dayThreeTemp.innerHTML = "Temp: " + dayThreeTempValue + " F";
         dayThreeWind.innerHTML = "Wind: " + dayThreeWindValue + " mph";
         dayThreeHumidity.innerHTML = "Humidity: " + dayThreeHumidityValue + " %";
         dayThreeIcon.setAttribute("src", dayThreeIconURL);
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var dayFourIconURL = "http://openweathermap.org/img/w/" + dayFourIconValue + ".png";
         var dayFourDateValue = dayjs().add(4, "day").format("M/D/YYYY");
 
-        dayFourTemp.innerHTML = "Temperature: " + dayFourTempValue + " F";
+        dayFourTemp.innerHTML = "Temp: " + dayFourTempValue + " F";
         dayFourWind.innerHTML = "Wind: " + dayFourWindValue + " mph";
         dayFourHumidity.innerHTML = "Humidity: " + dayFourHumidityValue + " %";
         dayFourIcon.setAttribute("src", dayFourIconURL);
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var dayFiveIconURL = "http://openweathermap.org/img/w/" + dayFiveIconValue + ".png";
         var dayFiveDateValue = dayjs().add(5, "day").format("M/D/YYYY");
 
-        dayFiveTemp.innerHTML = "Temperature: " + dayFiveTempValue + " F";
+        dayFiveTemp.innerHTML = "Temp: " + dayFiveTempValue + " F";
         dayFiveWind.innerHTML = "Wind: " + dayFiveWindValue + " mph";
         dayFiveHumidity.innerHTML = "Humidity: " + dayFiveHumidityValue + " %";
         dayFiveIcon.setAttribute("src", dayFiveIconURL);
